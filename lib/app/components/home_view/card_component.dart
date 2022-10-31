@@ -3,13 +3,66 @@ import 'package:flutter/material.dart';
 import '../../themes/themes.dart';
 
 class CustomExpenseCardWidget extends StatelessWidget {
-  const CustomExpenseCardWidget({Key? key}) : super(key: key);
+  final String title;
+  final double value;
+  final DateTime date;
+
+  const CustomExpenseCardWidget({
+    Key? key,
+    required this.title,
+    required this.value,
+    required this.date,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-      elevation: 3.0,
-      color: appThemeData.primaryColorDark.withOpacity(0.5),
+    return Container(
+      padding: const EdgeInsets.all(16.0),
+      decoration: const BoxDecoration(
+        color: Colors.deepPurple,
+        boxShadow: [
+          BoxShadow(
+            blurRadius: 5.0,
+            spreadRadius: 2.0,
+            offset: Offset(5.0, 6.0),
+          ),
+        ],
+      ),
+      child: Column(
+        children: [
+          Text(
+            title,
+            style: TextStyle(
+                color: appThemeData.textTheme.titleSmall!.color,
+                fontSize: appThemeData.textTheme.titleSmall!.fontSize),
+          ),
+          Divider(
+            color: appThemeData.primaryColorLight.withOpacity(0.5),
+            thickness: 0.5,
+            indent: 5.0,
+            endIndent: 10.0,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text(
+                date.toString(),
+                style: TextStyle(
+                  color: appThemeData.textTheme.bodyMedium!.color,
+                  fontSize: appThemeData.textTheme.bodyMedium!.fontSize,
+                ),
+              ),
+              Text(
+                'R\$ ${value.toString()}',
+                style: TextStyle(
+                  color: appThemeData.textTheme.bodyMedium!.color,
+                  fontSize: appThemeData.textTheme.bodyMedium!.fontSize,
+                ),
+              ),
+            ],
+          ),
+        ],
+      ),
     );
   }
 }
