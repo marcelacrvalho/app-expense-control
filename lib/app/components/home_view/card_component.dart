@@ -7,12 +7,9 @@ class CustomExpenseCardWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      width: double.infinity,
-      child: Card(
-        elevation: 3.0,
-        color: appThemeData.primaryColorDark.withOpacity(0.5),
-      ),
+    return Card(
+      elevation: 3.0,
+      color: appThemeData.primaryColorDark.withOpacity(0.5),
     );
   }
 }
