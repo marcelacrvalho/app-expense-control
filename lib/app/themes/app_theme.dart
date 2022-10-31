@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 final ThemeData appThemeData = ThemeData(
-  scaffoldBackgroundColor: Colors.black,
+  scaffoldBackgroundColor: Colors.white,
   primarySwatch: Colors.deepPurple,
   primaryColor: Colors.purpleAccent,
   primaryColorDark: Colors.black,
@@ -10,13 +10,24 @@ final ThemeData appThemeData = ThemeData(
 
   inputDecorationTheme: const InputDecorationTheme(
     labelStyle: TextStyle(
-      color: Colors.black,
+      color: Colors.white,
       fontSize: 12.0,
     ),
     hintStyle: TextStyle(
-      color: Colors.grey,
+      color: Colors.white,
       fontSize: 12.0,
       fontWeight: FontWeight.normal,
+    ),
+  ),
+
+  textTheme: const TextTheme(
+    bodyMedium: TextStyle(
+      color: Colors.white,
+      fontSize: 14.0,
+    ),
+    titleSmall: TextStyle(
+      color: Colors.purpleAccent,
+      fontSize: 18.0,
     ),
   ),
 );

@@ -4,11 +4,12 @@ import 'app/themes/themes.dart';
 import 'views/home.dart';
 
 void main() {
-  MaterialApp(
-    debugShowCheckedModeBanner: false,
-    title: 'Meus gastos',
-    theme: appThemeData,
-    home: const HomeView(),
-
+  runApp(
+    MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Meus gastos',
+      theme: appThemeData,
+      home: const HomeView(),
+    ),
   );
 }

@@ -53,7 +53,7 @@ class CustomExpenseCardWidget extends StatelessWidget {
                 ),
               ),
               Text(
-                'R\$ ${value.toString()}',
+                'R\$ ${value.toStringAsFixed(2)}',
                 style: TextStyle(
                   color: appThemeData.textTheme.bodyMedium!.color,
                   fontSize: appThemeData.textTheme.bodyMedium!.fontSize,
