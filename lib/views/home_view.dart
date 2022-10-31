@@ -10,11 +10,15 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: appThemeData.scaffoldBackgroundColor,
+        backgroundColor: Colors.deepOrange,
         actions: [
-          Icon(
-            Icons.add,
-            color: appThemeData.primaryColor,
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Icon(
+              Icons.add,
+              color: appThemeData.scaffoldBackgroundColor,
+              size: 30.0,
+            ),
           ),
         ],
         elevation: 0.0,
