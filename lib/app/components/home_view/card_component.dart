@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
 import '../../themes/themes.dart';
 
@@ -46,17 +47,21 @@ class CustomExpenseCardWidget extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                date.toString(),
+                DateFormat('d-M-y').format(date),
                 style: TextStyle(
                   color: appThemeData.textTheme.bodyMedium!.color,
                   fontSize: appThemeData.textTheme.bodyMedium!.fontSize,
                 ),
               ),
-              Text(
-                'R\$ ${value.toStringAsFixed(2)}',
-                style: TextStyle(
-                  color: appThemeData.textTheme.bodyMedium!.color,
-                  fontSize: appThemeData.textTheme.bodyMedium!.fontSize,
+              Container(
+                color: Colors.deepOrange,
+                padding: EdgeInsets.symmetric(horizontal: 8.0),
+                child: Text(
+                  'R\$ ${value.toStringAsFixed(2)}',
+                  style: TextStyle(
+                    color: appThemeData.textTheme.bodyMedium!.color,
+                    fontSize: appThemeData.textTheme.bodyMedium!.fontSize,
+                  ),
                 ),
               ),
             ],
