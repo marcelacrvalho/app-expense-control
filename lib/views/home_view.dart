@@ -19,8 +19,9 @@ class HomeView extends StatelessWidget {
   Widget _body() {
     return SafeArea(
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: const [
-          Text('OI'),
         CustomExpenseCardWidget(),
         ],
       ),
