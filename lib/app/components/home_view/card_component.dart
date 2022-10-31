@@ -55,7 +55,7 @@ class CustomExpenseCardWidget extends StatelessWidget {
               ),
               Container(
                 color: Colors.deepOrange,
-                padding: EdgeInsets.symmetric(horizontal: 8.0),
+                padding: const EdgeInsets.symmetric(horizontal: 8.0),
                 child: Text(
                   'R\$ ${value.toStringAsFixed(2)}',
                   style: TextStyle(
