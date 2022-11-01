@@ -9,7 +9,7 @@ final ThemeData appThemeData = ThemeData(
   dividerColor: Colors.transparent,
   
   appBarTheme: const AppBarTheme(
-    backgroundColor: Colors.deepOrange,
+    backgroundColor: Colors.deepPurple,
     elevation: 0.0,
   ),
   inputDecorationTheme: const InputDecorationTheme(
@@ -24,7 +24,7 @@ final ThemeData appThemeData = ThemeData(
   ),
   textTheme: const TextTheme(
     bodyMedium: TextStyle(
-      color: Colors.white,
+      color: Colors.black,
       fontSize: 14.0,
     ),
     titleSmall: TextStyle(
