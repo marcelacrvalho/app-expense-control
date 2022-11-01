@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:intl/intl.dart';
 
 import '../../../themes/themes.dart';
@@ -19,6 +20,7 @@ class CustomExpenseCardWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: Get.mediaQuery.size.height * 0.1,
       padding: const EdgeInsets.all(16.0),
       decoration: const BoxDecoration(
         color: Colors.deepPurple,
