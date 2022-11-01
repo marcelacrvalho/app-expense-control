@@ -7,10 +7,11 @@ class CustomActionIcon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Icon(
-      Icons.add,
+    return IconButton(
+      icon: const Icon(Icons.add),
       color: appThemeData.scaffoldBackgroundColor,
-      size: 30.0,
+      iconSize: 30.0, 
+      onPressed: () {  },
     );
   }
 }
