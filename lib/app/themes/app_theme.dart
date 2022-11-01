@@ -10,13 +10,12 @@ final ThemeData appThemeData = ThemeData(
 
   inputDecorationTheme: const InputDecorationTheme(
     labelStyle: TextStyle(
-      color: Colors.white,
+      color: Colors.black,
       fontSize: 12.0,
     ),
     hintStyle: TextStyle(
-      color: Colors.white,
+      color: Colors.black,
       fontSize: 12.0,
-      fontWeight: FontWeight.normal,
     ),
   ),
 
