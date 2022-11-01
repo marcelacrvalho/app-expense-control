@@ -7,7 +7,11 @@ final ThemeData appThemeData = ThemeData(
   primaryColorDark: Colors.black,
   primaryColorLight: Colors.white,
   dividerColor: Colors.transparent,
-
+  
+  appBarTheme: const AppBarTheme(
+    backgroundColor: Colors.deepOrange,
+    elevation: 0.0,
+  ),
   inputDecorationTheme: const InputDecorationTheme(
     labelStyle: TextStyle(
       color: Colors.black,
@@ -18,7 +22,6 @@ final ThemeData appThemeData = ThemeData(
       fontSize: 12.0,
     ),
   ),
-
   textTheme: const TextTheme(
     bodyMedium: TextStyle(
       color: Colors.white,
