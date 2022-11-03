@@ -14,6 +14,11 @@ class TransactionController extends GetxController implements TransactionData {
 
   get valueToDouble => double.tryParse(valueController.text) ?? 0.0;
 
+  void cleanBottomSheet() {
+    valueController.clear();
+    titleController.clear();
+  }
+
   @override
   void newTransaction() {
     transactions.add(
@@ -24,6 +29,7 @@ class TransactionController extends GetxController implements TransactionData {
         value: valueToDouble,
       ),
     );
+    cleanBottomSheet();
   }
 
   @override

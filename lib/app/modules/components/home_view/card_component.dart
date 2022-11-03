@@ -20,11 +20,11 @@ class CustomExpenseCardWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: Get.mediaQuery.size.height * 0.1,
+      height: 100.0,
       padding: const EdgeInsets.all(16.0),
-      decoration: const BoxDecoration(
-        color: Colors.deepPurple,
-        boxShadow: [
+      decoration: BoxDecoration(
+        color: appThemeData.appBarTheme.backgroundColor,
+        boxShadow: const [
           BoxShadow(
             blurRadius: 5.0,
             spreadRadius: 2.0,
